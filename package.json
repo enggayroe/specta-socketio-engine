@@ -1,5 +1,5 @@
 {
-  "name": "specta-socketio-server",
+  "name": "specta-socketio-engine",
   "version": "0.0.1",
   "description": "",
   "author": "",
@@ -24,9 +24,14 @@
     "@nestjs/core": "^9.0.0",
     "@nestjs/platform-express": "^9.0.0",
     "@nestjs/platform-socket.io": "^9.4.3",
+    "@nestjs/typeorm": "^10.0.0",
     "@nestjs/websockets": "^9.4.3",
+    "axios": "^1.4.0",
+    "mssql": "^9.1.1",
     "reflect-metadata": "^0.1.13",
-    "rxjs": "^7.2.0"
+    "rxjs": "^7.2.0",
+    "socket.io-client": "^4.6.2",
+    "typeorm": "^0.3.16"
   },
   "devDependencies": {
     "@nestjs/cli": "^9.0.0",

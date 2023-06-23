@@ -34,10 +34,14 @@ export class SocketClientService implements OnModuleInit, OnModuleDestroy {
         // const manager = new Manager("http://127.0.0.1:8081", {
         //     // transports: ['websocket', 'polling']
         // });
-        const manager = new Manager("http://127.0.0.1:8081", {
+        const manager = new Manager("http://172.17.0.3:8081", {
             autoConnect: true,
             transports: ['websocket']
         });
+        // const manager = new Manager("http://localhost:8081", {
+        //     autoConnect: true,
+        //     transports: ['websocket']
+        // });
 
         const socket = manager.socket("/login"); // main namespace
         manager.open((err) => {

@@ -9,22 +9,22 @@ import { ExternalApiService } from './services/external-api/external-api.service
 
 @Module({
   imports: [
-    TypeOrmModule.forRoot({
-      type: 'mssql',
-      host: 'localhost',
-      port: 1433,
-      username: 'sa',
-      password: 'yourStrong(_)Password',
-      database: 'test',
-      entities: [],
-      // entities: [__dirname + '/**/*.entity{.ts,.js}'],
-      // synchronize: true,
-      synchronize: false,
-      options: {
-        encrypt: true,
-        trustServerCertificate: true,
-      },
-    }),
+    // TypeOrmModule.forRoot({
+    //   type: 'mssql',
+    //   host: 'localhost',
+    //   port: 1433,
+    //   username: 'sa',
+    //   password: 'yourStrong(_)Password',
+    //   database: 'test',
+    //   entities: [],
+    //   // entities: [__dirname + '/**/*.entity{.ts,.js}'],
+    //   // synchronize: true,
+    //   synchronize: false,
+    //   options: {
+    //     encrypt: true,
+    //     trustServerCertificate: true,
+    //   },
+    // }),
     SharedModule,
   ],
   controllers: [AppController],
